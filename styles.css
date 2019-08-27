@@ -1,0 +1,291 @@
+html {
+  box-sizing: border-box;
+}
+
+/* default font-family for regular text */
+body {
+  font-family: 'Crimson Text', serif;
+}
+
+/* headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 800;
+  line-height: 1.2em;
+}
+
+/* add this class to make an element use montserrat */
+.cc-txt-sans {
+  font-family: Montserrat, sans-serif;
+}
+
+/* add this class to make an element use montserrat */
+.cc-txt-bold-sans {
+  font-family: Montserrat, sans-serif;
+  font-weight: 800;
+}
+
+button {
+  margin-bottom: 25px;
+  margin-right: 25%;
+  border-width: 2px;
+  padding: 4px 7px;
+  cursor: pointer;
+}
+
+.cc-bg-black {
+  background-color: rgb(0, 0, 0);
+}
+
+.cc-txt-gold {
+  color: rgb(208, 155, 44);
+}
+
+.btn {
+  background-color: rgb(0, 0, 0);
+  border-bottom-color: rgb(102, 102, 102);
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(102, 102, 102);
+  box-sizing: border-box;
+  color: rgb(208, 155, 44);
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  font-stretch: 100%;
+  font-weight: 800;
+  height: 50px;
+  line-height: 15px;
+  padding: 4px 7px;
+  touch-action: manipulation;
+  transition-delay: 0s;
+  transition-duration: 0.15s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  user-select: none;
+  white-space: nowrap;
+  width: 300px;
+  writing-mode: horizontal-tb;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-border-image: none;
+  position: absolute;
+  bottom: 5%;
+  right: -150px;
+}
+
+.btn:hover {
+  background-color: rgb(208, 155, 44);
+  color: rgb(0, 0, 0);
+}
+
+/* The Lightbox (background) */
+.lightbox {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  text-align: center;
+}
+
+/* Lightbox Content/Box */
+.lightbox-content {
+  background: url("https://www.coloradocollege.edu/global/images/2017/stripe-white-op15.png") bottom;
+  color: rgb(33, 37, 41);
+  display: inline-block;
+  margin: auto;
+  padding: 0px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.lightbox-content img {
+  float: left;
+  margin: 0 10px 0 0;
+  width: 50%;
+}
+
+.lightbox-txt {
+  background-color: #fff;
+  width: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-left: 50%;
+}
+
+.lightbox-txt p {
+  text-align: center;
+  line-height: 1.5em;
+  padding: 14% 25% 5% 25%;
+}
+
+.background-wrapper {
+  background-color: rgb(0, 0, 0);
+  display: inline-block;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 0px;
+  width: 80%;
+  text-align: center;
+}
+
+/* The Close Button */
+.close {
+  box-sizing: content-box;
+  color: rgb(33, 37, 41);
+  text-shadow: -1px 1px 2px rgb(33, 37, 41);
+  font-size: 28px;
+  line-height: 1rem;
+  font-weight: bold;
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  z-index: 3;
+}
+
+.close:hover,
+.close:focus {
+  color: #aaa;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cc-stripe-heading {
+  margin: 10px 0 35px -50vw;
+  background: url("https://www.coloradocollege.edu/global/images/2017/stripe-gold.png") bottom;
+  letter-spacing: 1px;
+  width: auto;
+  position: relative;
+  margin-left: 0;
+  z-index: 2;
+}
+
+.cc-stripe-heading span {
+  background-color: #fff;
+  padding: 0 10px;
+}
+
+/* media queries */
+@media (min-width: 1800px) {
+  p {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  .btn {
+    width: 600px;
+    right: -300px;
+  }
+}
+
+@media (max-width: 1190px) {
+  button {
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    bottom: 10%
+  }
+
+  .lightbox-txt p {
+    padding: 10% 10% 5% 10%;
+  }
+}
+
+@media (max-width: 1016px) {
+  .btn {
+    width: 140px;
+    font-size: 16px;
+    right: -70px;
+  }
+
+  .lightbox-txt p {
+    line-height: 1.1em;
+    padding: 15% 15% 5% 15%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 921px) {
+
+  /* align vertically */
+  .lightbox-content img {
+    float: none;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    left: 0;
+  }
+
+  .cc-stripe-heading {
+    margin: 2% auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .lightbox-txt {
+    margin: 0;
+  }
+
+  .lightbox-txt p {
+    padding: 10% 25% 1% 25%;
+  }
+
+  button {
+    margin-right: 50%;
+  }
+
+  .btn {
+    bottom: 5%;
+  }
+
+  .background-wrapper {
+    background: none;
+    box-sizing: content-box;
+  }
+
+  .lightbox-content {
+    margin: 5% auto;
+  }
+
+  @media (max-width: 525px) {
+    p {
+      font-size: .75rem;
+    }
+  }
+
+  @media (max-width: 427px) {
+    h2 {
+      font-size: 1rem;
+    }
+
+    .lightbox-txt p {
+      padding: 10% 5% 1% 5%;
+    }
+  }
